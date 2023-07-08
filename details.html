@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Details</title>
+    <style>
+      .container {
+        margin-top: 100px;
+      }
+    </style>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!--Main Navigation-->
+    <header>
+      <!-- Sidebar -->
+      <nav
+        id="sidebarMenu"
+        class="collapse d-lg-block sidebar collapse bg-white"
+      >
+        <div class="position-sticky">
+          <div class="list-group list-group-flush mx-3 mt-4">
+            <a
+              href="home.html"
+              class="list-group-item list-group-item-action py-2 ripple"
+              aria-current="true"
+            >
+              <i class="fas fa-tachometer-alt fa-fw me-3"></i
+              ><span>Main dashboard</span>
+            </a>
+            <a
+              href="task.html"
+              class="list-group-item list-group-item-action py-2 ripple"
+            >
+              <i class="fas fa-chart-area fa-fw me-3"></i><span>Task</span>
+            </a>
+            <a
+              href="#"
+              class="list-group-item list-group-item-action py-2 ripple active"
+              ><i class="fas fa-lock fa-fw me-3"></i
+              ><span>Task Details</span></a
+            >
+          </div>
+        </div>
+      </nav>
+      <!-- Sidebar -->
+
+      <!-- Navbar -->
+      <nav
+        id="main-navbar"
+        class="navbar navbar-expand-lg navbar-light bg-dark fixed-top"
+      >
+        <!-- Container wrapper -->
+        <div class="container-fluid">
+          <!-- Toggle button -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-mdb-toggle="collapse"
+            data-mdb-target="#sidebarMenu"
+            aria-controls="sidebarMenu"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+
+          <!-- Brand -->
+          <a class="navbar-brand" href="home.html">
+            <p class="logo"><strong>GEN</strong>NEXT</p>
+          </a>
+          <!-- Search form -->
+        </div>
+        <!-- Container wrapper -->
+      </nav>
+      <!-- Navbar -->
+    </header>
+    <div class="container d-flex justify-content-center">
+      <div class="justify-content-center">
+        <h1>Task Detail</h1>
+
+        <div class="card my-4">
+          <div class="card-body">
+            <h5 class="card-title">Task Title</h5>
+            <p class="card-text">Task Description goes here.</p>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                Due Date: <span class="text-muted">July 31, 2023</span>
+              </li>
+              <li class="list-group-item">
+                Status: <span class="text-success">Completed</span>
+              </li>
+              <li class="list-group-item">
+                Assignee: <span class="text-muted">John Doe</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <h2>Comments</h2>
+        <div id="comments">
+          <div class="card my-2">
+            <div class="card-body">
+              <h6 class="card-subtitle mb-2 text-muted">
+                John Doe - July 1, 2023
+              </h6>
+              <p class="card-text">Comment 1 goes here.</p>
+            </div>
+          </div>
+          <div class="card my-2">
+            <div class="card-body">
+              <h6 class="card-subtitle mb-2 text-muted">
+                Jane Smith - July 3, 2023
+              </h6>
+              <p class="card-text">Comment 2 goes here.</p>
+            </div>
+          </div>
+        </div>
+
+        <h2>Add Comment</h2>
+        <form id="commentForm">
+          <div class="mb-3">
+            <label for="commenterName" class="form-label">Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="commenterName"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <label for="commentText" class="form-label">Comment</label>
+            <textarea
+              class="form-control"
+              id="commentText"
+              rows="3"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+    <!--Main Navigation-->
+
+    <!--Main layout-->
+    <main style="margin-top: 58px">
+      <div class="container pt-4"></div>
+    </main>
+    <!--Main layout-->
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
