@@ -17,6 +17,23 @@ p.logo {
 p.logo strong {
   font-weight: 700;
 }
+p.foooter {
+  color: #1b1818;
+  font-size: 1em;
+  font-weight: 300;
+  position: relative;
+  text-transform: uppercase;
+  top: 17px;
+}
+p.foooter strong {
+  font-weight: 700;
+}
+footer {
+  position: fixed;
+  height: 100px;
+  bottom: 0;
+  width: 100%;
+}
 /* Sidebar */
 .sidebar {
   position: fixed;
